@@ -1,0 +1,44 @@
+{
+  "id": "2470204",
+  "name": "NODE-VUE-MOBA",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "448705",
+      "name": "news",
+      "font_class": "news",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "902008",
+      "name": "back",
+      "font_class": "back",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "11208508",
+      "name": "23-superhero",
+      "font_class": "-superhero",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "13875011",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "17411757",
+      "name": "省略",
+      "font_class": "shenglve",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}
