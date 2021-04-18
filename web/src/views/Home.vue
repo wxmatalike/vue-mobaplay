@@ -89,7 +89,6 @@
         </div>
       </template>
     </m-list-card>
-    <m-card icon="menu" title="英雄列表"> </m-card>
   </div>
 </template>
 
