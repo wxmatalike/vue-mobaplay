@@ -1,21 +1,11 @@
 <template>
   <div>
     <swiper :options="swiperOptions" autoplay:true>
-      <swiper-slide
-        ><img class="w-100" src="../assets/images/1.jpeg" alt=""
-      /></swiper-slide>
-      <swiper-slide
-        ><img class="w-100" src="../assets/images/2.jpeg" alt=""
-      /></swiper-slide>
-      <swiper-slide
-        ><img class="w-100" src="../assets/images/3.jpeg" alt=""
-      /></swiper-slide>
-      <swiper-slide
-        ><img class="w-100" src="../assets/images/4.jpeg" alt=""
-      /></swiper-slide>
-      <swiper-slide
-        ><img class="w-100" src="../assets/images/5.jpeg" alt=""
-      /></swiper-slide>
+      <swiper-slide v-for="(item,index) in ads" :key="index">
+        <a tag="div" :to="item.items[0].url">
+          <img class="w-100" :src="item.items[0].image" alt=""/>
+        </a>
+      </swiper-slide>
       <div
         class="swiper-pagination pagination-home text-right px-3"
         slot="pagination"
@@ -129,6 +119,7 @@ export default {
       },
       newsCats: [],
       heroCats: [],
+      ads:[]
     };
   },
   methods: {
@@ -140,10 +131,15 @@ export default {
       const res = await this.$http.get("heroes/list");
       this.heroCats = res.data;
     },
+    async fetchAdsCats() {
+      const res = await this.$http.get("ads/list");
+      this.ads = res.data;
+    },
   },
   created() {
     this.fetchNewsCats();
     this.fetchHeroCats();
+    this.fetchAdsCats();
   },
 };
 </script>
