@@ -2,7 +2,7 @@
   <div>
     <swiper :options="swiperOptions" autoplay:true>
       <swiper-slide v-for="(item,index) in ads" :key="index">
-        <a tag="div" :to="item.items[0].url">
+        <a :href="item.items[0].url">
           <img class="w-100" :src="item.items[0].image" alt=""/>
         </a>
       </swiper-slide>
@@ -44,10 +44,10 @@
           <i class="sprite sprite-kingcamp"></i>
           <div class="py-2">王者营地</div>
         </div>
-        <div class="nav-item mb-3">
+        <router-link tag="div" to="/wx" class="nav-item mb-3">
           <i class="sprite sprite-wx"></i>
           <div class="py-2">公众号</div>
-        </div>
+        </router-link>
       </div>
     </div>
 

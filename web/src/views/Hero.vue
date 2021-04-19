@@ -27,9 +27,6 @@
             <span>生存</span>
             <span class="badge bg-dark-2">{{ model.scores.survive }}</span>
           </div>
-          <router-link to="/" tag="span" class="text-grey fs-sm"
-            >皮肤：8 &gt;</router-link
-          >
         </div>
       </div>
     </div>
@@ -56,7 +53,7 @@
                 </router-link>
                 <router-link tag="button" to="/" class="btn btn-lg flex-1 ml-2">
                   <i class="iconfont icon-menu"></i>
-                  英雄介绍视频
+                  一图识英雄
                 </router-link>
               </div>
               <!-- skills -->

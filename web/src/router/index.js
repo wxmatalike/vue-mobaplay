@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Main from '../views/Main.vue'
 import Article from '../views/Article.vue'
 import Hero from '../views/Hero.vue'
+import Wx from '../views/Wx.vue'
 
 Vue.use(VueRouter)
 
@@ -23,7 +24,11 @@ const routes = [
         component: Article,
         props:true
       },
-
+      {
+        path: '/wx',
+        name: "wx",
+        component: Wx,
+      },
     ]
   },
   {

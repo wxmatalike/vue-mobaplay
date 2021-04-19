@@ -6,7 +6,9 @@
         <div class="text-white">英雄联盟</div>
         <div class="text-grey-1 fs-xxs">因为热爱，所以联盟</div>
       </div>
-      <button type="button" class="btn bg-primary">立即下载</button>
+      <a href="https://lolm.qq.com/">
+        <button type="button" class="btn bg-primary">立即下载</button>
+      </a>
     </div>
 
     <div class="bg-primary pt-3 pb-2">
