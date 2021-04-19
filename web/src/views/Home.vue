@@ -1,7 +1,7 @@
 <template>
   <div>
     <swiper :options="swiperOptions" autoplay:true>
-      <swiper-slide v-for="(item,index) in ads" :key="index">
+      <swiper-slide v-for="(item,index) in swiperimg" :key="index">
         <a :href="item.items[0].url">
           <img class="w-100" :src="item.items[0].image" alt=""/>
         </a>
@@ -118,7 +118,7 @@ export default {
       },
       newsCats: [],
       heroCats: [],
-      ads:[]
+      swiperimg:[]
     };
   },
   methods: {
@@ -130,15 +130,15 @@ export default {
       const res = await this.$http.get("heroes/list");
       this.heroCats = res.data;
     },
-    async fetchAdsCats() {
+    async fetchImgCats() {
       const res = await this.$http.get("ads/list");
-      this.ads = res.data;
+      this.swiperimg = res.data;
     },
   },
   created() {
     this.fetchNewsCats();
     this.fetchHeroCats();
-    this.fetchAdsCats();
+    this.fetchImgCats();
   },
 };
 </script>
